@@ -1,0 +1,19 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+body {
+    background-image: url("imagenes/invernadero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
