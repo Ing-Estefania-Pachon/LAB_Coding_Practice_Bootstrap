@@ -14,7 +14,13 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 nav {
@@ -34,4 +40,77 @@ nav {
 
 .navbar-toggler-icon {
     filter: invert(1);
+}
+
+.list-group-item {
+    background-color: rgba(0, 0, 0, 0.85) !important; /* fondo negro translúcido */
+    color: white !important; /* texto blanco */
+    border: 1px solid #555 !important; /* borde tenue */
+}
+
+.list-group-item input[type="checkbox"] {
+    accent-color: #c68eff; /* checkbox morado claro */
+}
+
+.list-group-item .btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.list-group-item .btn-danger:hover {
+    background-color: #a82836;
+}
+
+#nueva-tarea {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    border: 1px solid #555;
+}
+
+#nueva-tarea::placeholder {
+    color: #ccc; /* color del texto del placeholder */
+}
+
+#agregar {
+    background-color: #c68eff; /* morado claro */
+    color: black;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#agregar:hover {
+    background-color: #8000c8; /* morado oscuro */
+    color: white;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.85) !important;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+footer a {
+    color: white;
+
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:hover i {
+    color: #c68eff; /* morado claro */
+}
+
+footer p:hover {
+    color: #c68eff;
+    cursor: default;
+}
+
+footer a i {
+    color: inherit; /* permite que el ícono herede el color del enlace */
 }
