@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'PixelFont';
+    src: url('fonts/04B_30__.TTF') format('truetype');
+}
+
 body {
     background-image: url("imagenes/invernadero.png");
     background-size: cover;
@@ -13,7 +18,20 @@ body {
 }
 
 nav {
+    font-family: 'PixelFont';
+    font-size: 20px;
     margin: 0;
     padding: 0;
     background-color: black;
+    opacity: 85%;
+}
+
+.navbar .navbar-nav .nav-link,
+.navbar-brand,
+.navbar-toggler {
+    color: white !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
 }
